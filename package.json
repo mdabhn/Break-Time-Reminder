@@ -1,0 +1,14 @@
+{
+  "name": "eye-rest",
+  "version": "1.0.0",
+  "description": "An Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "electron": "^11.2.1"
+  }
+}
