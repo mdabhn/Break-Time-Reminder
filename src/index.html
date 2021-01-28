@@ -3,8 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Break Reminder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
   </head>
-  <body></body>
-  <script></script>
+  <body>
+    <p
+      class="text-center fs-1"
+      style="
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      Set Break Time For
+    </p>
+    <div style="display: flex; justify-content: center; align-content: center">
+      <select class="form-select w-50" id="time-selected">
+        <option selected>Select Time Here</option>
+        <option value="15">15 min</option>
+        <option value="30">30 min</option>
+        <option value="45">45 min</option>
+        <option value="60">60 min</option>
+      </select>
+      <br />
+    </div>
+    <div
+      class=""
+      style="display: flex; justify-content: center; align-content: center"
+    >
+      <p class="fs-02 mt-2" id="show-time-left" style="display: none">
+        Break time Come's in : <span id="next-break-time"></span>
+      </p>
+    </div>
+    <div
+      style="display: flex; justify-content: center; align-content: center"
+      class="mt-2"
+    >
+      <button id="close-btn" class="btn btn-primary">Stop Break Timer</button>
+    </div>
+    <footer style="bottom: 0">
+      <small style="width: 100%; position: fixed; bottom: 0; text-align: center"
+        >Created By 🅰🅱 Hossain</small
+      >
+    </footer>
+  </body>
+  <script>
+    require('./app');
+  </script>
 </html>
